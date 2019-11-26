@@ -86,39 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/controller.js":
-/*!***************************!*\
-  !*** ./src/controller.js ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Controller; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Controller =\n/*#__PURE__*/\nfunction () {\n  _createClass(Controller, null, [{\n    key: \"calc\",\n    value: function calc(a, b) {\n      return a - b;\n    }\n  }]);\n\n  function Controller(name) {\n    _classCallCheck(this, Controller);\n\n    this.name = name;\n  }\n\n  _createClass(Controller, [{\n    key: \"log\",\n    value: function log() {\n      var arr = [5, 4, 32, 78, 9];\n      console.log(arr.sort(Controller.calc));\n    }\n  }]);\n\n  return Controller;\n}();\n\n\n\n//# sourceURL=webpack:///./src/controller.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test.js */ \"./src/test.js\");\n/* harmony import */ var _controller_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./controller.js */ \"./src/controller.js\");\n\n\nvar array = [5, 6, 4, 2, 1, 9, 0];\nObject(_test_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nvar control = new _controller_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('Anton');\ncontrol.log();\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/test.js":
-/*!*********************!*\
-  !*** ./src/test.js ***!
-  \*********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return log; });\nfunction log() {\n  console.log('Hello');\n}\nvar array = [5, 6, 4, 2, 1, 9, 0];\n\n//# sourceURL=webpack:///./src/test.js?");
+eval("console.log('Privet');\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
