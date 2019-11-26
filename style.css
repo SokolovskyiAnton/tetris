@@ -5,8 +5,19 @@
 
 body {
     background-color: black;
+    padding: 3rem;
+}
+
+#root {
+    text-align: center;
 }
 
 #root h1 {
-    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+#root canvas {
+    display: block;
+    margin: 0 auto;
 }
