@@ -9,6 +9,7 @@ export default class Game {
 
     score = 0;
     lines = 0;
+    topOut = false;
     playfield = this.createPlayField();
     activePiece = this.createPiece();
     nextPiece = this.createPiece();
@@ -41,7 +42,8 @@ export default class Game {
             level: this.level,
             lines: this.lines,
             nextPiece: this.nextPiece,
-            playfield
+            playfield,
+            isGameOver: this.topOut
         }
     }
 
@@ -149,6 +151,7 @@ export default class Game {
     }
 
     movePieceDown() {
+        if (this.topOut) return;
         this.activePiece.y += 1;
         if (this.hasCollision()) {
             this.activePiece.y -= 1;
@@ -156,6 +159,9 @@ export default class Game {
             const clearedLines = this.clearLines();
             this.updateScore(clearedLines);
             this.updatePieces();
+        }
+        if (this.hasCollision()) {
+            this.topOut = true;
         }
     }
 
