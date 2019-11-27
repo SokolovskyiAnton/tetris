@@ -50,6 +50,7 @@ export default class View {
         this.context.textAlign = 'center';
         this.context.textBaseline = 'middle';
         this.context.fillText('Press ENTER to start', this.width / 2, this.height / 2)
+        this.context.fillText('PC version', this.width / 2, this.height / 2 + 48);
     }
 
     renderPauseScreen() {
