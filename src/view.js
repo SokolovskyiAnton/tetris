@@ -108,7 +108,7 @@ export default class View {
         this.context.fillText(`Level: ${level}`, this.panelX, this.panelY + 48);
         this.context.fillText('Next', this.panelX, this.panelY + 96);
         this.context.fillText('Press enter to pause', this.panelX, this.panelY + 192);
-        this.context.fillText('Press enter to pause', this.panelX, this.panelY + 192);
+        this.context.fillText('Press enter to pause', this.panelX, this.panelY + 210);
 
         for (let y = 0; y < nextPiece.blocks.length; y++) {
             for (let x = 0; x < nextPiece.blocks[y].length; x++) { 
